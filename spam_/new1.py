@@ -2,9 +2,9 @@ import streamlit as  st
 from tensorflow.keras.models import load_model
 import joblib
 import numpy as np
-model=load_model("spam/spam_email.keras")
+model=load_model("main/spam/spam_email.keras")
 try:
-    vectorizer=joblib.load("spam_/vectorizer_spam.pkl")
+    vectorizer=joblib.load("main/spam_/vectorizer_spam.pkl")
 except Exception as e2:
         print("Some Error occurred in loading the model")
 def fun(email):
@@ -62,4 +62,5 @@ if st.session_state.ans is not None:
         feedback(email,ans)
     if option != 'Select an option...':
         st.info(f"Thanks for your feedback: {option}")
+
 
