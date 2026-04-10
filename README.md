@@ -6,6 +6,7 @@ The project combines:
 - **TensorFlow (Keras)** for spam classification
 - **Scikit-learn (TF-IDF Vectorizer)** for text transformation
 - **Streamlit** for a clean and interactive web interface
+- **Achieved** 97% accuracy in the model
 
 ---
 
